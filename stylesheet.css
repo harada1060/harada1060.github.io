@@ -19,6 +19,7 @@ a {
   border-bottom: 4px solid #000;
   border-right: 4px solid #000;
   transform: rotate(45deg);
+  border-color: white;
 }
 
 .container {
