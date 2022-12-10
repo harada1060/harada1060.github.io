@@ -8,7 +8,7 @@
   body {
     margin: 0;
     font-family: "Hiragino Kaku Gothic ProN";
-    background-image: url(hoge.png);
+    background-image: url(logo_04.png);
     background-size: 360px 360px; /* image size */
     animation: bg 10s infinite linear;
   }
