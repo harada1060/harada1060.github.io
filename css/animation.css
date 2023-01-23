@@ -1,0 +1,73 @@
+div{
+    top: 50;
+    border-radius: 3em;
+    animation: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transform-origin: 25em;
+    position: relative;
+}
+
+@keyframes rotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+}
+.a1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation-delay: 0.1s;
+    image-rendering: auto;
+}
+.a2{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    animation-delay: 0.3s;
+    image-rendering: auto;
+    
+}
+.a3{
+    position: absolute;
+    top: 30%;
+    left: 0;
+    animation-delay: 0.5s;
+    image-rendering: auto;
+    
+}
+.a4{
+    position: absolute;
+    top: 45%;
+    left: 0;
+    animation-delay: 0.7s;
+    image-rendering: auto;
+    
+}
+.a5{
+    position: absolute;
+    top: 60%;
+    left: 0;
+    animation-delay: 0.9s;
+    image-rendering: auto;
+   
+}
+img{
+    margin-right: auto;
+    margin-top: auto;
+    margin-left: auto;
+    width: 100;
+}
+p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 100px;
+    font-weight: bolder;
+    color: blue;
+    padding: 0;
+    margin: 0;
+    font-family: 'Lobster', cursive;
+    font-family: 'Whisper', cursive;
+    text-shadow: 10px 20px 20px aqua;
+}

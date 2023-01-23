@@ -1,0 +1,44 @@
+fieldset.field{
+    padding: 30px;
+    border: solid 2px green;
+}
+legend.lege{
+    padding: 9px 20px;
+    background-color: gold;
+    color: purple;
+}
+
+.va {
+	position: relative;
+	width: 80%;
+	margin: 40px 3%;
+}
+.va input[type='text'] {
+	font: 15px/24px sans-serif;
+	box-sizing: border-box;
+	width: 60%;
+	padding: 0.3em;
+	transition: 0.3s;
+	letter-spacing: 1px;
+	color: #aaaaaa;
+	border: 1px solid #ffffff;
+	box-shadow: 1px 1px 2px 0 #707070 inset;
+    border-radius: 4px;
+    background-color: aqua;
+}
+
+.ef input[type='text']:focus {
+     outline: none;
+     box-shadow: inset 1px 1px 2px 0 #c9c9c9;
+}
+input[type="radio"]:checked {
+    box-shadow: 0 0 0 3px pink; 
+}
+input[type="checkbox"]:checked {
+    box-shadow: 0 0 0 3px pink; }
+textarea{
+    background-color: aquamarine;
+}
+h1{
+    font-family: "Nico Moji"; 
+}

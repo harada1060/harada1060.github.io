@@ -1,0 +1,46 @@
+.block{
+    float: left;
+    border-radius: 1em;
+    width: 250px;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: aqua;
+    margin-left: 100px;
+}
+.block2{
+    float: left;
+    border-radius: 1em;
+    width: 250px;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: aqua;
+    margin-left: 50px;
+}
+.block3{
+    float: left;
+    border-radius: 1em;
+    width: 250px;
+    border: 1px solid red;
+    padding: 10px;
+    background-color: aqua;
+    margin-left: 50px;
+}
+h3{
+    background-color: greenyellow;
+    border-radius: 1em;
+    width: 55%;
+    padding-left: 8px;
+    height: 25px;
+    font-size: 18px;
+}
+.v{
+    background-color: greenyellow;
+    border-radius: 1em;
+    width: 70%;
+    padding-left: 8px;
+    height: 25px;
+    font-size: 18px;
+}
+h1{
+    font-family: "Nico Moji"; 
+}

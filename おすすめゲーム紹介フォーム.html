@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/earlyaccess/nicomoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/おすすめゲーム紹介フォーム.css">
+    <title>おすすめゲーム紹介フォーム</title>
+</head>
+<body>
+    <form>
+        <h1>おすすめゲーム紹介フォーム</h1>
+        <p><strong>Note:</strong>全てのフィールドに入力してください</p>
+        <fieldset class="field">
+            <legend class="lege">個人情報</legend>
+        <div class = "va">
+        <label class="ef" id = "name-label" for="name">名前：</label>
+        <input type="text" placeholder="名前"><br>
+        <label class="ef" id = "e-label" for="e">Email：</label>
+        <input type="text" placeholder="メール"><br>
+        <label class="ef" id = "phon-label" for="phon">電話番号：</label>
+        <input type="text" placeholder="09("><br>
+        </div>
+        性別：<br>
+        <input type="radio" name="t">男<br>
+        <input type="radio" name="t">女<br>
+        <input type="radio" name="t">他<br>
+        DOB：
+        <input type="date">
+        </fieldset>
+        <fieldset class="field">
+        やってみたいゲームのジャンルを教えてください。<br>
+        <input type="checkbox">アクション<br>
+        <input type="checkbox">RPG<br>
+        <input type="checkbox">シューティング<br>
+        <input type="checkbox">レーシング<br>
+        <input type="checkbox">シミュレーション<br>
+        <input type="checkbox">アドベンチャー<br>
+        </fieldset>
+        <fieldset class="field">
+            機種：
+            <select>
+                <option value="left">PC</option>
+                <option value="right">PS4/PS5</option>
+                <option value="conservative">Switch</option>
+                <option value="nazi">Xbox</option>
+            </select>
+            年齢：
+            <select>
+                <option value="left">10~20</option>
+                <option value="right">21~30</option>
+                <option value="conservative">31~40</option>
+                <option value="nazi">41~</option>
+            </select>
+        </fieldset>
+        <fieldset class="field">
+            <legend class="lege">自由</legend>
+            今までプレイした中で楽しかったゲームを書いてください。<br>
+            <textarea cols="50" rows="4" placeholder="ここに入力"></textarea><br>
+            知りたいことがあれば書いてください。<br>
+            <textarea cols="50" rows="4" placeholder="ここに入力"></textarea><br>
+            <br>
+        </fieldset>
+        <button type = "submit">提出</button>
+        
+        </form>
+</body>
+</html>
