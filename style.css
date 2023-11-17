@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body {
+	background-color: #222;
+}
+
 .wrap {
 	animation: fadein 3s forwards;
 }
@@ -20,19 +24,22 @@
 		opacity: 1
 	}
 }
-.wara{
+
+.wara {
 	transform: scale(0.9);
 }
 
 .container {
 	display: flex;
+	margin-top: 60px;
 }
 
 .item {
 	width: 150px;
 }
-.item-2{
-	width:160px;
+
+.item-2 {
+	width: 160px;
 	margin-left: 100px;
 }
 
@@ -56,24 +63,32 @@
 }
 
 .pstyle {
-	font-weight:bold;
+	font-weight: bold;
 	font-size: large;
 	background: linear-gradient(transparent 65%, yellow 30%);
 }
+
 .pstyle-1 {
-	font-weight:bold;
+	font-weight: bold;
 	font-size: large;
 	background: linear-gradient(transparent 65%, skyblue 20%);
 }
+
 .pstyle-2 {
-	font-weight:bold;
+	font-weight: bold;
 	font-size: large;
 	background: linear-gradient(transparent 65%, greenyellow 20%);
 }
+
 .pstyle-3 {
-	font-weight:bold;
+	font-weight: bold;
 	font-size: large;
 	background: linear-gradient(transparent 65%, orangered 20%);
+}
+
+.pstyle-w {
+	font-weight: bold;
+	background: linear-gradient(transparent 50%, rgb(255, 0, 128) 70%);
 }
 
 .shadow {
@@ -183,7 +198,7 @@
 }
 
 .B {
-	
+
 	display: none;
 }
 
@@ -240,10 +255,13 @@ code {
 	font-size: 20px;
 	margin-top: 1em;
 	font-weight: 700;
+
 }
-select{
+
+select {
 	border: solid 2px #222;
 }
+
 .subbox2 {
 	color: darkorange;
 	font-size: 20px;
@@ -276,8 +294,9 @@ select{
 	padding: 0;
 	border: none;
 	margin-bottom: 1.3em;
-	margin-right: 0.7em;
+	margin-right: 1.2em;
 }
+
 
 .btn-1 span {
 	position: relative;
@@ -362,6 +381,7 @@ select{
 	color: white;
 	border: none;
 }
+
 .btn-2 span {
 	position: relative;
 	display: block;
@@ -383,6 +403,7 @@ select{
 		4px 4px 5px 0px rgba(0, 0, 0, .3);
 	transition: all 0.3s ease;
 }
+
 .btn-2 span:before,
 .btn-2 span:after {
 	position: absolute;
@@ -397,11 +418,104 @@ select{
 		4px 4px 5px 0px rgba(0, 0, 0, .3);
 	transition: all 0.3s ease;
 }
+
+.btn-3 {
+	background: linear-gradient(0deg, rgb(128, 128, 255) 0%, rgb(0, 0, 160) 100%);
+	color: white;
+	line-height: 42px;
+	border: none;
+	padding: 0;
+	margin-bottom: 1.3em;
+}
+
+.btn-3 span {
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.btn-3:before,
+.btn-3:after {
+	position: absolute;
+	content: "";
+	right: 0;
+	bottom: 0;
+	background: rgb(128, 128, 255);
+	box-shadow:
+		-7px -7px 20px 0px rgba(255, 255, 255, .9),
+		-4px -4px 5px 0px rgba(255, 255, 255, .9),
+		7px 7px 20px 0px rgba(0, 0, 0, .2),
+		4px 4px 5px 0px rgba(0, 0, 0, .3);
+	transition: all 0.3s ease;
+}
+.btn-3:before {
+	height: 0%;
+	width: 2px;
+}
+
+.btn-3:after {
+	width: 0%;
+	height: 2px;
+}
+
+.btn-3:hover {
+	color: rgb(0, 0, 160);
+	background: transparent;
+}
+
+.btn-3:hover:before {
+	height: 100%;
+}
+
+.btn-3:hover:after {
+	width: 100%;
+}
+
+.btn-3 span:before,
+.btn-3 span:after {
+	position: absolute;
+	content: "";
+	left: 0;
+	top: 0;
+	background: rgb(0, 0, 160);
+	box-shadow:
+		-7px -7px 20px 0px rgba(255, 255, 255, .9),
+		-4px -4px 5px 0px rgba(255, 255, 255, .9),
+		7px 7px 20px 0px rgba(0, 0, 0, .2),
+		4px 4px 5px 0px rgba(0, 0, 0, .3);
+	transition: all 0.3s ease;
+}
+
+.btn-3 span:before {
+	width: 2px;
+	height: 0%;
+}
+
+.btn-3 span:after {
+	height: 2px;
+	width: 0%;
+}
+
+.btn-3 span:hover:before {
+	height: 100%;
+}
+
+.btn-3 span:hover:after {
+	width: 100%;
+}
+
 .frame {
-    width: 98%;               /* 幅指定 */
-    height: 100%;              /* 高さ指定 */
-    border: dashed 5px darkorange; /* 枠線指定 */
-    background-color: #fff9f4;  /* 背景色指定 */
-    border-radius: 10px;        /* 角丸指定 */
-    padding: 10px;
+	width: 97.5%;
+	/* 幅指定 */
+	height: 100%;
+	/* 高さ指定 */
+	border: dashed 4px darkorange;
+	/* 枠線指定 */
+	background-color: #fff9f4;
+	/* 背景色指定 */
+	border-radius: 10px;
+	/* 角丸指定 */
+	padding: 13px;
+
 }
