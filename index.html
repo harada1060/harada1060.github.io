@@ -8,6 +8,7 @@
 </head>
 
 <body>
+	<div class="frame">
 	<div style="background-color: darkorange;padding-top: 0.05%; padding-bottom: 0.05%; border: solid 1.5px black;">
 		<div class="plate">
 			<p class="script"><span>Program</span></p>
@@ -17,9 +18,9 @@
 			<p class="script"><span>with Array</span></p>
 		</div>
 	</div>
+
 	<div class="mondai">
-		<p>問題1-1 空白に当てはまる選択肢を選んでください。</p>
-		<p>プログラムの実行はできないけど、書き込めるよ。</p>
+		<p><span class="pstyle"><strong>問題A-1</strong> 空白に当てはまる選択肢を選んでください。(プログラムの実行はできないけど書き込めるよ。)</span></p>
 	</div>
 
 	<div>
@@ -37,7 +38,7 @@ public class Arraym1 {
 
 }</code></pre>
 	</div>
-	<p>選択肢:a</p>
+	<p><span class="pstyle-1">選択肢:<strong>a</strong></span></p>
 	<div class="fle">
 		<pre style="margin-top: 0px; border: solid 2px skyblue;" class="resi"><code class="prettyprint fon linenums lang-java">
 		//整数型
@@ -47,7 +48,7 @@ public class Arraym1 {
 		String[] stringArray = new String[5]; 
 		</code></pre>
 	</div>
-	<p>選択肢:b</p>
+	<p><span class="pstyle-2">選択肢:<strong>b</strong></span></p>
 	<div>
 		<pre style="margin-top: 0px; border: solid 2px greenyellow;" class="resi"><code class="prettyprint fon linenums lang-java">
 		//整数型
@@ -57,7 +58,7 @@ public class Arraym1 {
 		String[] stringArray = new String[4]; 
 		</code></pre>
 	</div>
-	<p>選択肢:c</p>
+	<p><span class="pstyle-3">選択肢:<strong>c</strong></span></p>
 	<div>
 		<pre style="margin-top: 0px; border: solid 2px orangered;" class="resi"><code class="prettyprint fon linenums lang-java">
 		//整数型
@@ -79,17 +80,15 @@ public class Arraym1 {
 					<option value="ne">c</option>
 				</select>
 
-				<select id="ha" class="subbox2">
+				<select id="ha" class="subbox2 sb2">
 					<option value="">正誤を確認</option>
-					<option value="ha1">正解</option>
+					<option value="ha1" style="color: darkred;">正解</option>
 				</select>
 
-				<select id="ne" class="subbox2">
+				<select id="ne" class="subbox2 sb3">
 					<option value="">正誤を確認</option>
-					<option value="ha2">不正解</option>
+					<option value="ha2" style="color:darkblue">不正解</option>
 				</select>
-
-
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 			</div>
 			<br>
@@ -98,17 +97,30 @@ public class Arraym1 {
 
 		</form>
 	</div>
+	<div class="container">
+		<div class="item">
+			<div class="inner_item active"><button class="btn-2 custom-btn"><span>ヒントだよ Click Me！</span><p>(笑)</p></button></div>
+		</div>
+		<div class="item-2">
+			<div class="inner_item d-none"><button class="btn-2 custom-btn"><span>ヒントだよ Click Me！</span><p>(笑)</p></button></div>
+		</div>
+	</div>
 	<div>
-		<button>
-			<div class="A">ボタン</div>
+		<button class="asobi">
+			<div class="A" style="width: 10em; padding: 5px;"></div>
 		</button>
-		<div class="B">これが表示/非表示</div>
+		<div class="B"><pre style="margin-top: 0px; border: solid 2px darkorchid;" class="resi"><code class="prettyprint fon linenums lang-java">
+			 //整数型
+			                       //↓ここの中には要素数が入るよ。(この場合だと箱が3個できるよ。0~2)
+			int[] intArray = new int[3];
+			 //↑配列だから([])が入るよ。
+			 //文字列型も同じ感じで書くよ。
+			 </code></pre></div>
 
 		<div class="top_wrap">
-			<button><a href="m1.html">次の問題に移動する</a></button>
+			<a href="Array-m2.html"><button class="custom-btn btn-1"><span>次の問題に移動する</span></button></a>
 		</div>
-
-
+	</div>
 		<script type="text/javascript">
 
 
@@ -141,6 +153,13 @@ public class Arraym1 {
 			}
 
 			window.onload = () => contentEditable();
+			$(".inner_item").hover(
+				function () {
+					if ($(this).hasClass("active")) {
+						$(".d-none").addClass("active").removeClass("d-none");
+						$(this).addClass("d-none").removeClass("active");
+					}
+				});
 
 
 		</script>
